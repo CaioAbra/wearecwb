@@ -32,4 +32,10 @@ $(document).ready(function () {
             scrollPrev();
         }
     });
+
+    $('ul.side-nav li').click(function () {
+        var clickedIndex = $(this).index();
+        showItem(clickedIndex);
+        currentItem = clickedIndex;
+    });
 });
