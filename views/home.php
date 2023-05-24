@@ -87,29 +87,41 @@
 
                                     <div class="carousel">
                                         <div class="carousel-items">
-                                            <div class="item active">
+                                            <div class="item">
                                                 <img src="./assets/img/game-console.png" alt="Jogos">
-                                                <h3>Título 1</h3>
-                                                <p class="description">Descrição do item 1</p>
+                                                <h3>Desenvolvimento de games</h3>
+                                                <p class="description">- Unity</p>
+                                                <p class="description">- Godot</p>
                                             </div>
                                             <div class="item">
                                                 <img src="./assets/img/appdevelopment.png" alt="Apps">
-                                                <h3>Título 2</h3>
-                                                <p class="description">Descrição do item 2</p>
+                                                <h3>Desenvolvimento de Apps</h3>
+                                                <div class="description-container">
+                                                    <p class="description">- Flutter</p>
+                                                    <p class="description">- ReactJS</p>
+                                                    <p class="description">- Angular</p>
+                                                    <p class="description">- VueJS</p>
+                                                </div>
                                             </div>
                                             <div class="item">
                                                 <img src="./assets/img/bot.png" alt="Bots">
-                                                <h3>Título 3</h3>
-                                                <p class="description">Descrição do item 3</p>
+                                                <h3>Desenvolvimento de Bots</h3>
+                                                <div class="description-container">
+                                                    <p class="description">- C#</p>
+                                                    <p class="description">- Python</p>
+                                                    <p class="description">- NodeJS</p>
+                                                    <p class="description">- Bots Discord</p>
+                                                </div>
                                             </div>
                                             <div class="item">
                                                 <img src="assets/img/shopping-online.png" alt="ecommerce">
-                                                <h3>Título 4</h3>
-                                                <p class="description">Descrição do item 4</p>
+                                                <h3>Websites</h3>
+                                                <p class="description">- Landing Page</p>
+                                                <p class="description">- WooCommerce</p>
                                             </div>
                                         </div>
 
-                                        <div class="slider--prev">
+                                        <div class="slider-prev">
                                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;"
@@ -122,7 +134,7 @@
                                                 </g>
                                             </svg>
                                         </div>
-                                        <div class="slider--next">
+                                        <div class="slider-next">
                                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;"
@@ -144,7 +156,11 @@
                                 </div>
                             </li>
                             <li class="section">
-                                <div id="sobreNos">sobreNos</div>
+                                <div id="sobreNos">
+                                    <h2>
+                                        Start-up cooperativa focada em desenvolvimento de aplicativos, bots e games.
+                                    </h2>
+                                </div>
                             </li>
                             <li class="section">
                                 <div id="contato">contato</div>

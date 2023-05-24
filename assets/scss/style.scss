@@ -403,23 +403,19 @@ div.perspective {
                                             text-align: center
                                         }
 
-
-
                                         div.carousel {
                                             position: relative;
+                                            overflow: hidden;
 
                                             .carousel-items {
                                                 position: relative;
                                                 display: flex;
-                                                width: 80%;
+                                                max-width: 80% !important;
                                                 margin: 0 auto;
                                                 padding: 0;
                                                 list-style: none;
-                                                justify-content: center;
-                                                transform-style: preserve-3d;
-                                                transform: translate3d(0, 0, 0);
-                                                transition: transform 0.5s ease;
-                                                perspective: 1000px;
+                                                align-items: center;
+                                                min-height: 40vh;
 
                                                 .item {
                                                     position: relative;
@@ -428,6 +424,9 @@ div.perspective {
                                                     margin: 0 10px;
                                                     text-align: center;
                                                     transition: transform 0.5s ease;
+                                                    transform: scale(0.8);
+                                                    top: 1.875rem;
+                                                    display: block;
 
                                                     img {
                                                         width: 100%;
@@ -445,45 +444,88 @@ div.perspective {
                                                         text-transform: uppercase;
                                                     }
 
+                                                    div.description-container {
+                                                        column-count: 2;
+                                                        column-gap: 0;
+                                                    }
+
                                                     p.description {
                                                         max-width: 250px;
                                                         margin: 0 auto;
+                                                        display: none;
                                                     }
                                                 }
 
                                                 .active {
                                                     transform: scale(1.2);
+
+                                                    p.description {
+                                                        display: block;
+                                                    }
                                                 }
                                             }
 
-                                            .slider--prev,
-                                            .slider--next {
+                                            .slider-prev,
+                                            .slider-next {
                                                 position: absolute;
                                                 top: 50%;
-                                                transform: translateY(-50%);
                                                 display: flex;
+                                                width: 50px;
+                                                height: 50px;
                                                 align-items: center;
                                                 justify-content: center;
-                                                width: 3.125rem;
-                                                height: 3.125rem;
                                                 background-color: #282828;
                                                 border-radius: 50%;
                                                 cursor: pointer;
-                                                color: #fff;
+
+                                                svg {
+                                                    width: 1.25rem;
+                                                    fill: #fff;
+                                                }
                                             }
 
-                                            .slider--prev {
-                                                left: -40px;
+                                            .slider-prev {
+                                                left: 0;
                                             }
 
-                                            .slider--next {
-                                                right: -40px;
+                                            .slider-next {
+                                                right: 0;
+                                            }
+
+                                            @media screen and (max-width: 500px) {
+                                                .carousel-items {
+
+                                                    min-height: 50vh;
+
+                                                    .item {
+                                                        flex: 0 0 100%;
+                                                        max-width: 100%;
+                                                    }
+                                                }
+                                            }
+
+                                            @media screen and (min-width: 501px) and (max-width: 768px) {
+                                                .carousel-items {
+                                                    min-height: 55vh;
+
+                                                    .item {
+                                                        flex: 0 0 50%;
+                                                        max-width: 50%;
+                                                    }
+                                                }
+                                            }
+
+                                            @media screen and (min-width: 1000px) {
+                                                .carousel-items {
+                                                    min-height: 50vh;
+
+                                                    .item {
+                                                        flex: 0 0 33.33%;
+                                                        max-width: 33.33%;
+                                                    }
+                                                }
                                             }
                                         }
-
-
-
-
                                     }
 
                                     &#sobreNos {
@@ -496,10 +538,25 @@ div.perspective {
                                         justify-content: center;
                                         margin: 0 auto;
 
+                                        h2 {
+                                            position: relative;
+                                            margin-top: 85px;
+                                            font-size: 4.5rem;
+                                            font-weight: 900;
+                                            line-height: 1;
+                                            z-index: 1;
+                                        }
+
                                         @media (max-width: 1180px) {
                                             max-width: 100%;
+
+                                            h2 {
+                                                font-size: 3.5rem;
+                                                margin-top: 60px;
+                                            }
                                         }
                                     }
+
 
                                     &#contato {
                                         position: relative;

@@ -357,19 +357,17 @@ div.perspective div.ship div.viewport div.container div ul#space.main-content li
 }
 div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel {
   position: relative;
+  overflow: hidden;
 }
 div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items {
   position: relative;
   display: flex;
-  width: 80%;
+  max-width: 80% !important;
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  justify-content: center;
-  transform-style: preserve-3d;
-  transform: translate3d(0, 0, 0);
-  transition: transform 0.5s ease;
-  perspective: 1000px;
+  align-items: center;
+  min-height: 40vh;
 }
 div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .item {
   position: relative;
@@ -378,6 +376,9 @@ div.perspective div.ship div.viewport div.container div ul#space.main-content li
   margin: 0 10px;
   text-align: center;
   transition: transform 0.5s ease;
+  transform: scale(0.8);
+  top: 1.875rem;
+  display: block;
 }
 div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .item img {
   width: 100%;
@@ -393,33 +394,71 @@ div.perspective div.ship div.viewport div.container div ul#space.main-content li
   font-weight: 700;
   text-transform: uppercase;
 }
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .item div.description-container {
+  column-count: 2;
+  column-gap: 0;
+}
 div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .item p.description {
   max-width: 250px;
   margin: 0 auto;
+  display: none;
 }
 div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .active {
   transform: scale(1.2);
 }
-div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider--prev,
-div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider--next {
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .active p.description {
+  display: block;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider-prev,
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider-next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   display: flex;
+  width: 50px;
+  height: 50px;
   align-items: center;
   justify-content: center;
-  width: 3.125rem;
-  height: 3.125rem;
   background-color: #282828;
   border-radius: 50%;
   cursor: pointer;
-  color: #fff;
 }
-div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider--prev {
-  left: -40px;
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider-prev svg,
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider-next svg {
+  width: 1.25rem;
+  fill: #fff;
 }
-div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider--next {
-  right: -40px;
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider-prev {
+  left: 0;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider-next {
+  right: 0;
+}
+@media screen and (max-width: 500px) {
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items {
+    min-height: 50vh;
+  }
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items {
+    min-height: 55vh;
+  }
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items {
+    min-height: 50vh;
+  }
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
 }
 div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos {
   position: relative;
@@ -431,9 +470,21 @@ div.perspective div.ship div.viewport div.container div ul#space.main-content li
   justify-content: center;
   margin: 0 auto;
 }
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos h2 {
+  position: relative;
+  margin-top: 85px;
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1;
+  z-index: 1;
+}
 @media (max-width: 1180px) {
   div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos {
     max-width: 100%;
+  }
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos h2 {
+    font-size: 3.5rem;
+    margin-top: 60px;
   }
 }
 div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#contato {
