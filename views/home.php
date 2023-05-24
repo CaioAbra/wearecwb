@@ -81,6 +81,7 @@
                                     </div>
                                 </div>
                             </li>
+
                             <li class="section">
                                 <div id="produtos">
                                     <h2>Produtos</h2>
@@ -155,13 +156,17 @@
 
                                 </div>
                             </li>
+
                             <li class="section">
                                 <div id="sobreNos">
-                                    <h2>
-                                        Start-up cooperativa focada em desenvolvimento de aplicativos, bots e games.
-                                    </h2>
+                                    <div class="efeitoSobreNos">
+                                        <h2>
+                                            Start-up cooperativa focada em desenvolvimento de aplicativos, bots e games.
+                                        </h2>
+                                    </div>
                                 </div>
                             </li>
+                            
                             <li class="section">
                                 <div id="contato">contato</div>
                             </li>

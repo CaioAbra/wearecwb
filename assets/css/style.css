@@ -470,6 +470,41 @@ div.perspective div.ship div.viewport div.container div ul#space.main-content li
   justify-content: center;
   margin: 0 auto;
 }
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos div.efeitoSobreNos {
+  position: relative;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos div.efeitoSobreNos::before {
+  content: "";
+  position: absolute;
+  top: 0rem;
+  left: 12.5rem;
+  transform: rotate(-25deg);
+  border: 0.3125rem solid #2653c4;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  z-index: 10;
+}
+@media (max-width: 500px) {
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos div.efeitoSobreNos::before {
+    left: 0rem;
+  }
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos div.efeitoSobreNos::after {
+  content: "";
+  position: absolute;
+  top: 3rem;
+  left: 25rem;
+  transform: rotate(45deg);
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: #2653c4;
+  z-index: 10;
+}
+@media (max-width: 500px) {
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos div.efeitoSobreNos::after {
+    left: 10rem;
+  }
+}
 div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos h2 {
   position: relative;
   margin-top: 85px;
@@ -478,12 +513,51 @@ div.perspective div.ship div.viewport div.container div ul#space.main-content li
   line-height: 1;
   z-index: 1;
 }
-@media (max-width: 1180px) {
-  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos {
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos h2::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 16.75rem;
+  width: 30px;
+  height: 30px;
+  background-color: #2653c4;
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos h2::before {
+    left: 10rem;
+  }
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos h2::after {
+  content: "";
+  position: absolute;
+  top: 255px;
+  left: 255px;
+  width: 10px;
+  height: 10px;
+  background-color: #2653c4;
+}
+@media (max-width: 500px) {
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos h2::after {
+    top: 10rem;
+    left: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos h2 {
+    font-size: 8vw;
     max-width: 100%;
   }
+}
+@media (min-width: 768px) {
   div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos h2 {
     font-size: 3.5rem;
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1100px) {
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos h2 {
+    font-size: 4.25rem;
     margin-top: 60px;
   }
 }
