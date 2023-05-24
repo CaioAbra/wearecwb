@@ -5,8 +5,10 @@ $(document).ready(function () {
     function showItem(index) {
         $('ul.side-nav li').removeClass('is-active');
         $('ul.side-nav li').eq(index).addClass('is-active');
-        $('#space li.l-section.section').removeClass('section--is-active');
-        $('#space li.l-section.section').eq(index).addClass('section--is-active');
+
+
+        $('ul#space li.section').removeClass('section-active');
+        $('ul#space li.section').eq(index).addClass('section-active');
     }
 
     function scrollNext() {
