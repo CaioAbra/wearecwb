@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
     <div class="perspective">
         <div class="ship">
             <div class="viewport">
@@ -28,7 +27,6 @@
                             <span></span>
                             <span></span>
                         </div>
-
                     </header>
 
                     <div>
@@ -48,13 +46,9 @@
                                         <h1>CWB TECH STUDIO</h1>
 
                                         <button class="cta">ENTRE EM CONTATO
-                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;"
-                                                xml:space="preserve">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                                                 <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                                                    <path
-                                                        d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z">
+                                                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z">
                                                     </path>
                                                 </g>
                                             </svg>
@@ -123,10 +117,7 @@
                                         </div>
 
                                         <div class="slider-prev">
-                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;"
-                                                xml:space="preserve">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                                                 <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
                                                     <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
                                                 c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
@@ -136,24 +127,14 @@
                                             </svg>
                                         </div>
                                         <div class="slider-next">
-                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;"
-                                                xml:space="preserve">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                                                 <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                                                    <path
-                                                        d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z">
+                                                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z">
                                                     </path>
                                                 </g>
                                             </svg>
                                         </div>
                                     </div>
-
-
-
-
-
-
                                 </div>
                             </li>
 
@@ -166,19 +147,80 @@
                                     </div>
                                 </div>
                             </li>
-                            
+
                             <li class="section">
-                                <div id="contato">contato</div>
+                                <div id="contato">
+                                    <div class="bg-map"></div>
+
+                                    <div class="form">
+                                        <div class="modalForm">
+                                            <p>Somos uma start-up totalmente digital e não temos endereço físico.</p>
+                                            <p>Envie-nos uma mensagem falando um pouco sobre seu projeto.</p>
+
+
+                                            <form method="post" id="email_form">
+                                                <div>
+                                                    <label for="name">Nome:</label>
+                                                    <input type="text" id="fname" name="subject">
+                                                </div>
+
+                                                <div>
+                                                    <label for="email">E-mail:</label>
+                                                    <input type="email" id="email" name="text">
+                                                </div>
+
+                                                <div>
+                                                    <p>Para qual produto você deseja informações?</p>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox" id="bots" name="extra_bots" value="Bots">
+                                                    <label for="bots">Bots</label>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox" id="games" name="extra_games" value="Games">
+                                                    <label for="games">Games</label>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox" id="app" name="extra_app" value="App">
+                                                    <label for="app">Aplicativos (Android/iOS)</label>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox" id="website" name="extra_website">
+                                                    <label for="website">Website</label>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox" id="e-commerce" name="extra_e-commerce">
+                                                    <label for="e-commerce">E-commerce</label>
+                                                </div>
+
+                                                <div class="mt-1">
+                                                    <label class="f-bold" for="message">Conte-nos um pouco sobre sua ideia no campo abaixo</label>
+                                                    <textarea class="mt-1" name="extra_msg" id="message"></textarea>
+                                                </div>
+
+                                                <div>
+                                                    <input id="submit_form" type="submit" value="Enviar">
+                                                </div>
+                                            </form>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
-
 
     <script src="./assets/js/jquery-3.7.0.min.js"></script>
     <script src="./assets/js/script.js"></script>
