@@ -382,6 +382,139 @@ div.perspective {
                                         }
 
                                     }
+
+                                    &#produtos {
+                                        position: relative;
+                                        display: flex;
+                                        width: 56.25rem;
+                                        max-width: 75%;
+                                        height: 100%;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        margin: 0 auto;
+
+                                        @media (max-width: 1180px) {
+                                            max-width: 100%;
+                                        }
+
+                                        h2 {
+                                            margin: 0 0 1.25rem 0;
+                                            font-size: 1.875rem;
+                                            text-align: center
+                                        }
+
+
+
+                                        div.carousel {
+                                            position: relative;
+
+                                            .carousel-items {
+                                                position: relative;
+                                                display: flex;
+                                                width: 80%;
+                                                margin: 0 auto;
+                                                padding: 0;
+                                                list-style: none;
+                                                justify-content: center;
+                                                transform-style: preserve-3d;
+                                                transform: translate3d(0, 0, 0);
+                                                transition: transform 0.5s ease;
+                                                perspective: 1000px;
+
+                                                .item {
+                                                    position: relative;
+                                                    flex: 0 0 33.33%;
+                                                    max-width: 33.33%;
+                                                    margin: 0 10px;
+                                                    text-align: center;
+                                                    transition: transform 0.5s ease;
+
+                                                    img {
+                                                        width: 100%;
+                                                        max-width: 200px;
+                                                        height: auto;
+                                                        margin: 0 auto;
+                                                        border-radius: 50%;
+                                                        overflow: hidden;
+                                                    }
+
+                                                    h3 {
+                                                        margin-top: 10px;
+                                                        font-size: 12px;
+                                                        font-weight: 700;
+                                                        text-transform: uppercase;
+                                                    }
+
+                                                    p.description {
+                                                        max-width: 250px;
+                                                        margin: 0 auto;
+                                                    }
+                                                }
+
+                                                .active {
+                                                    transform: scale(1.2);
+                                                }
+                                            }
+
+                                            .slider--prev,
+                                            .slider--next {
+                                                position: absolute;
+                                                top: 50%;
+                                                transform: translateY(-50%);
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                width: 3.125rem;
+                                                height: 3.125rem;
+                                                background-color: #282828;
+                                                border-radius: 50%;
+                                                cursor: pointer;
+                                                color: #fff;
+                                            }
+
+                                            .slider--prev {
+                                                left: -40px;
+                                            }
+
+                                            .slider--next {
+                                                right: -40px;
+                                            }
+                                        }
+
+
+
+
+                                    }
+
+                                    &#sobreNos {
+                                        position: relative;
+                                        display: flex;
+                                        width: 56.25rem;
+                                        max-width: 75%;
+                                        height: 100%;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        margin: 0 auto;
+
+                                        @media (max-width: 1180px) {
+                                            max-width: 100%;
+                                        }
+                                    }
+
+                                    &#contato {
+                                        position: relative;
+                                        display: flex;
+                                        width: 56.25rem;
+                                        max-width: 75%;
+                                        height: 100%;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        margin: 0 auto;
+
+                                        @media (max-width: 1180px) {
+                                            max-width: 100%;
+                                        }
+                                    }
                                 }
                             }
                         }

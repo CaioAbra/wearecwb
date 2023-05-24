@@ -40,4 +40,31 @@ $(document).ready(function () {
         showItem(clickedIndex);
         currentItem = clickedIndex;
     });
-});
+
+
+
+    // carousel
+    var carousel = $('.carousel');
+    var items = $('.carousel-items .item');
+    var currentItem = 0;
+
+    $('.slider--next').click(function () {
+        $(items[currentItem]).removeClass('active');
+        currentItem++;
+        if (currentItem >= items.length) {
+            currentItem = 0;
+        }
+        $(items[currentItem]).addClass('active');
+        carousel.css('transform', 'translateX(' + (-33.33 * currentItem) + '%)');
+    });
+
+    $('.slider--prev').click(function () {
+        $(items[currentItem]).removeClass('active');
+        currentItem--;
+        if (currentItem < 0) {
+            currentItem = items.length - 1;
+        }
+        $(items[currentItem]).addClass('active');
+        carousel.css('transform', 'translateX(' + (-33.33 * currentItem) + '%)');
+    });
+})

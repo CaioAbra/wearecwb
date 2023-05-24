@@ -335,5 +335,121 @@ div.perspective div.ship div.viewport div.container div ul#space.main-content li
   font-size: 1rem;
   text-transform: uppercase;
 }
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos {
+  position: relative;
+  display: flex;
+  width: 56.25rem;
+  max-width: 75%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (max-width: 1180px) {
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos {
+    max-width: 100%;
+  }
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos h2 {
+  margin: 0 0 1.25rem 0;
+  font-size: 1.875rem;
+  text-align: center;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel {
+  position: relative;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items {
+  position: relative;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.5s ease;
+  perspective: 1000px;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .item {
+  position: relative;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin: 0 10px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .item img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .item h3 {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .item p.description {
+  max-width: 250px;
+  margin: 0 auto;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .carousel-items .active {
+  transform: scale(1.2);
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider--prev,
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider--next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: #282828;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider--prev {
+  left: -40px;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#produtos div.carousel .slider--next {
+  right: -40px;
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos {
+  position: relative;
+  display: flex;
+  width: 56.25rem;
+  max-width: 75%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (max-width: 1180px) {
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#sobreNos {
+    max-width: 100%;
+  }
+}
+div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#contato {
+  position: relative;
+  display: flex;
+  width: 56.25rem;
+  max-width: 75%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (max-width: 1180px) {
+  div.perspective div.ship div.viewport div.container div ul#space.main-content li.section div#contato {
+    max-width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
