@@ -17,10 +17,24 @@
 </head>
 
 <body>
-  
-    <div class="ship">
 
+    <div class="perspective">
+        <div class="ship">
+            <div class="viewport">
+                <div class="container">
+                    <header>
+                        <div class="menu-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </header>
+                </div>
+            </div>
+        </div>
     </div>
+
 
     <script src="./assets/js/jquery-3.7.0.min.js"></script>
     <script src="./assets/js/script.js"></script>
