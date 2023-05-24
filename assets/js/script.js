@@ -58,16 +58,16 @@ $(document).ready(function () {
     var clickedIndex = $(this).index();
     showItem(clickedIndex);
     currentItem = clickedIndex;
-
     buttonCtaTOP();
   });
 
   //botão de contato
-  $(".cta").click(function () {
+  $('button.cta').on('click', function (event) {
     var clickedIndex = $(this).index() + 2;
     showItem(clickedIndex);
     currentItem = clickedIndex;
   });
+
 });
 
 // carousel
@@ -145,4 +145,50 @@ $(document).ready(function () {
   $(".slider-next").click(function () {
     moveCarousel();
   });
+});
+
+//estrelas de fundo
+$(document).ready(function () {
+  var numEstrelas = 200; // Número total de estrelas
+  var contenedorEstrelas = $('.estrelas');
+  var larguraJanela = $(window).width();
+  var alturaJanela = $(window).height();
+
+  for (var i = 0; i < numEstrelas; i++) {
+    var tamanho = Math.random() * 4; // Tamanho aleatório da estrela (entre 0 e 4)
+    var duracao = "infinite"; // Duração infinita da animação
+    var left = Math.random() * larguraJanela; // Posição horizontal aleatória da estrela (entre 0 e a largura da janela)
+    var top = Math.random() * alturaJanela; // Posição vertical aleatória da estrela (entre 0 e a altura da janela)
+    var opacity = Math.random(); // Opacidade aleatória da estrela (entre 0 e 1)
+    var speedX = Math.random() * 10 - 5; // Velocidade aleatória do movimento horizontal (entre -5 e 5)
+    var speedY = Math.random() * 10 - 5; // Velocidade aleatória do movimento vertical (entre -5 e 5)
+
+    var estrela = $('<div class="estrela"></div>').css({
+      width: tamanho + 'px',
+      height: tamanho + 'px',
+      left: left + 'px',
+      top: top + 'px',
+      opacity: opacity
+    });
+
+    contenedorEstrelas.append(estrela);
+
+    animateEstrela(estrela, duracao, speedX, speedY);
+  }
+
+
+  function animateEstrela(estrela, speedX, speedY) {
+    estrela.css('animation', 'estrela-animation infinite linear');
+    estrela.css('animation-duration', Math.random() * 5 + 1 + 's');
+    estrela.css('animation-delay', Math.random() + 's');
+    estrela.css('transform', 'translate(' + speedX + 'px, ' + speedY + 'px)');
+
+    // Reiniciar a animação após sua conclusão
+    estrela.on('animationiteration', function () {
+      estrela.css('animation-duration', Math.random() * 5 + 1 + 's');
+      estrela.css('animation-delay', Math.random() + 's');
+      estrela.css('transform', 'translate(' + speedX + 'px, ' + speedY + 'px)');
+    });
+  }
+
 });

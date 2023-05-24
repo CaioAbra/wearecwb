@@ -42,7 +42,7 @@
                             </ul>
                         </nav>
 
-                        <ul id="space" class="main-content">
+                        <ul id="space" class="main-content estrelas">
                             <li class="section section-active">
                                 <div id="home">
                                     <div class="homeBanner">
