@@ -40,6 +40,11 @@ $font-path: "../fonts/";
     font-weight: 700;
 }
 
+button,
+a {
+    cursor: pointer;
+}
+
 body {
     background-color: #0c0c0c;
     font-size: .875rem;
@@ -128,6 +133,7 @@ div.perspective {
                         opacity: 0;
                         visibility: hidden;
                         transition: opacity .4s ease-in-out, visibility 0s .4s;
+                        cursor: pointer;
 
                         &.is-active {
                             opacity: 1;
@@ -343,12 +349,17 @@ div.perspective {
                                                 border: none;
                                                 background-color: #2653c4;
                                                 color: #fff;
+                                                transition: all .8s;
 
                                                 svg {
                                                     position: relative;
                                                     left: .3125rem;
                                                     width: .9375rem;
                                                     fill: #fff
+                                                }
+
+                                                &:hover {
+                                                    transform: scale(.9);
                                                 }
 
                                             }
