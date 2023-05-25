@@ -755,6 +755,19 @@ div.perspective div.ship div.containerList ul li.is-active span::before {
   z-index: 0;
 }
 
+.btn-whatsApp {
+  right: 25px;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  z-index: 100;
+  transition: all 0.8s;
+}
+.btn-whatsApp:hover {
+  transform: scale(0.8);
+}
+
 @keyframes estrela-animation {
   0% {
     transform: translate(0, 0) scale(1);

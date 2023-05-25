@@ -871,6 +871,22 @@ div.perspective {
     z-index: 0;
 }
 
+
+
+.btn-whatsApp {
+    right: 25px;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    z-index: 100;
+    transition: all .8s;
+
+    &:hover {
+        transform: scale(.8);
+    }
+}
+
 @keyframes estrela-animation {
     0% {
         transform: translate(0, 0) scale(1);
