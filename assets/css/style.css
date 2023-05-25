@@ -715,6 +715,7 @@ div.perspective div.ship div.containerList ul li {
   margin: 0;
   text-align: center;
   width: 100%;
+  cursor: pointer;
 }
 div.perspective div.ship div.containerList ul li span {
   font-size: 3.4rem;
